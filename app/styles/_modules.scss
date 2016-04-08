@@ -1,26 +1,29 @@
-.toDoSubmit {
-  color: white;
-  background-color: #962d22;
+#todo-button {
+  color: $font-color;
+  background-color: $subtle-shift;
   border: none;
   margin-left: -4px;
   font-size: 16px;
   padding: 11px 20px;
+  outline: none;
 }
 
-.toDoInput {
+#todo-input {
   width: 300px;
-  color: white;
+  color: $dark;
   font-size: 16px;
   padding: 11px 17px;
-  background-color: green;
+  background-color: $action-color;
   border: none;
+  outline: none;
+
 }
 
-.toDoList li {
+#new-todo li {
   width: 200px;
   padding-top: 20px;
-  color: white;
-  border-bottom: 2px solid white;
+  color: $font-color;
+  border-bottom: 2px solid $font-color;
   text-align: left;
   list-style: none;
   text-transform: uppercase;
@@ -31,13 +34,8 @@
   padding-left: 0;
 }
 
-.cs-options .strike {
-  text-decoration: line-through;
-  color: #999;
-}
 
 .completed {
   text-decoration: line-through;
-  color: green;
-
+  color: $subtle-shift;
 }

@@ -1,13 +1,13 @@
 let todos = [];
 
-document.querySelector("#toDoSubmit")
+document.querySelector("#todo-button")
   .addEventListener("click", (e) => {
     e.preventDefault();
-    let infoField = document.querySelector("#toDoInput");
-    console.log(infoField.value);
-    let todo = new Todo(infoField.value);
+    let todoInput = document.querySelector("#todo-input");
+    console.log(todoInput.value);
+    let todo = new Todo(todoInput.value);
     todos.push(todo);
-    infoField.value = "";
+    todoInput.value = "";
     render();
   })
 
@@ -20,7 +20,6 @@ function Todo(item) {
 function render() {
   let list = document.querySelector("#toDo");
 
-  // document.querySelector
   let oldTodos = document.querySelectorAll("#toDo li");
 
   Array.from(oldTodos).forEach((todo) => {
@@ -28,9 +27,6 @@ function render() {
       markComplete(todo);
     })
   })
-
-  // loop through existing todos, call removeEventListener
-  // on each todo
 
   list.innerHTML = "";
 

@@ -1,5 +1,5 @@
 body {
-  background-color: lightgrey;
+  background-color: $dark;
   font-family: Arial;
   text-transform: uppercase;
 }
@@ -7,5 +7,5 @@ body {
 h1 {
   font-size: 40px;
   font-weight: normal;
-  color: #666;
+  color: $font-color;
 }
