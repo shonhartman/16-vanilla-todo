@@ -6,9 +6,27 @@
     <link rel="stylesheet" href="/styles/main.css">
   </head>
   <body>
-
-    <ul></ul>
-
+    
     <script src="/js/app.js" charset="utf-8"></script>
+
+    <div class="container">
+     <div class="inside-container">
+       <div class="header">
+         <h1 id="title">To Do List</h1>
+       </div>
+       <div class="inputContainer">
+         <form id="toDoForm">
+           <input type="text" id="toDoInput" class="toDoInput">
+           <input type="submit" id="toDoSubmit" class="toDoSubmit" value="new">
+         </form>
+       </div>
+
+       <div class="outputContainer">
+         <div id="toDoList" class="toDoList">
+           <ul id="toDo" class="toDo"></ul>
+         </div>
+       </div>
+     </div>
+   </div>
   </body>
 </html>
